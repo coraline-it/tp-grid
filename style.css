@@ -1,0 +1,138 @@
+body {
+  font-family: "Roboto Light", sans-serif;
+  background-color: #DEF7EC;
+  color: #014737;
+  margin: unset;
+  background-image:url("./img/undraw_before_dawn_re_hp4m.svg");
+  background-size: cover;
+}
+#logo {
+  width: 5rem;
+  border-radius: 50%;
+}
+#navbar {
+  background-color: #0E9F6E;
+  width: auto;
+  height: 5rem;
+  padding: 1rem 1rem;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 5px 5px rgba(91, 199, 161, 0.49);
+  display: grid;
+}
+
+#quepaso {
+  grid-column: 8;
+  grid-row: 2;
+}
+#quepaso a {
+  margin: 50px;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Old Standard TT', serif;
+  color: #03543F;
+  margin: unset;
+  background-color: rgba(188, 240, 218, 0.37);
+  width: 15rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
+  padding: 2rem;
+}
+
+.wrapper-under {
+  background-color: rgb(188, 240, 218);
+  border-radius: 10px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.laBox1 {
+  border: 1px solid #014737;
+  border-radius: 5px;
+}
+
+.laBox2 {
+  border: 1px solid #014737;
+  border-radius: 5px;
+  height: 10rem;
+}
+
+.leTexte {
+  font-weight: bold;
+}
+
+#one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+#two {
+  grid-column: 1;
+  grid-row: 2 / 3;
+}
+#three {
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+#four {
+  grid-column: 1;
+  grid-row: 3 / 4;
+}
+#five {
+  grid-column: 2;
+  grid-row: 3 / 4;
+}
+#six {
+  grid-column: 1;
+  grid-row: 4 / 5;
+}
+#seven {
+  grid-column: 2;
+  grid-row: 4 / 5;
+}
+#eight {
+  grid-column: 2;
+  grid-row: 5;
+  background-color: #03543F;
+  border-radius: 5px;
+  color: #fff;
+  height: 2rem;
+}
+#eightLeft{
+  grid-column: 1;
+  grid-row: 4 / 6;
+  padding-top: 2rem;
+  width: 250px;
+  border-radius: 10px;
+}
+#nine {
+  grid-column: 1;
+  grid-row: 2 / 3;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper-under {
+    display: flex;
+  }
+
+  form {
+    flex-direction: column;
+    width: 10rem;
+  }
+
+  #nine {
+    width: 0;
+  }
+
+  #eightLeft {
+    width: 150px;
+  }
+}
+
